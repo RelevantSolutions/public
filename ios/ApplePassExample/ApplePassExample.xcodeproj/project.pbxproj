@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		D002652E1DB01BA100651CF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D002652D1DB01BA100651CF2 /* main.m */; };
 		D00265311DB01BA100651CF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D00265301DB01BA100651CF2 /* AppDelegate.m */; };
-		D00265341DB01BA100651CF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00265331DB01BA100651CF2 /* ViewController.m */; };
 		D00265371DB01BA100651CF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00265351DB01BA100651CF2 /* Main.storyboard */; };
 		D00265391DB01BA100651CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00265381DB01BA100651CF2 /* Assets.xcassets */; };
 		D002653C1DB01BA100651CF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D002653A1DB01BA100651CF2 /* LaunchScreen.storyboard */; };
+		D002654B1DB134D500651CF2 /* UIWebViewExample.m in Sources */ = {isa = PBXBuildFile; fileRef = D002654A1DB134D500651CF2 /* UIWebViewExample.m */; };
+		D002654E1DB1361300651CF2 /* WKWebViewExample.m in Sources */ = {isa = PBXBuildFile; fileRef = D002654D1DB1361300651CF2 /* WKWebViewExample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		D002652D1DB01BA100651CF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D002652F1DB01BA100651CF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D00265301DB01BA100651CF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D00265321DB01BA100651CF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D00265331DB01BA100651CF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D00265361DB01BA100651CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D00265381DB01BA100651CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D002653B1DB01BA100651CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D002653D1DB01BA100651CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00265491DB134D500651CF2 /* UIWebViewExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewExample.h; sourceTree = "<group>"; };
+		D002654A1DB134D500651CF2 /* UIWebViewExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewExample.m; sourceTree = "<group>"; };
+		D002654C1DB1361300651CF2 /* WKWebViewExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewExample.h; sourceTree = "<group>"; };
+		D002654D1DB1361300651CF2 /* WKWebViewExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewExample.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,12 @@
 		D002652B1DB01BA100651CF2 /* ApplePassExample */ = {
 			isa = PBXGroup;
 			children = (
+				D002654C1DB1361300651CF2 /* WKWebViewExample.h */,
+				D002654D1DB1361300651CF2 /* WKWebViewExample.m */,
+				D00265491DB134D500651CF2 /* UIWebViewExample.h */,
+				D002654A1DB134D500651CF2 /* UIWebViewExample.m */,
 				D002652F1DB01BA100651CF2 /* AppDelegate.h */,
 				D00265301DB01BA100651CF2 /* AppDelegate.m */,
-				D00265321DB01BA100651CF2 /* ViewController.h */,
-				D00265331DB01BA100651CF2 /* ViewController.m */,
 				D00265351DB01BA100651CF2 /* Main.storyboard */,
 				D00265381DB01BA100651CF2 /* Assets.xcassets */,
 				D002653A1DB01BA100651CF2 /* LaunchScreen.storyboard */,
@@ -151,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D00265341DB01BA100651CF2 /* ViewController.m in Sources */,
+				D002654E1DB1361300651CF2 /* WKWebViewExample.m in Sources */,
+				D002654B1DB134D500651CF2 /* UIWebViewExample.m in Sources */,
 				D00265311DB01BA100651CF2 /* AppDelegate.m in Sources */,
 				D002652E1DB01BA100651CF2 /* main.m in Sources */,
 			);
@@ -310,6 +316,7 @@
 				D00265421DB01BA100651CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

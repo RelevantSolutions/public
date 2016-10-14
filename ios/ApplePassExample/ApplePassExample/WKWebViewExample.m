@@ -6,15 +6,15 @@
 //  Copyright © 2016 Relevant Solutions. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "WKWebViewExample.h"
 #import <WebKit/WebKit.h>
 #import <PassKit/PassKit.h>
 
-@interface ViewController ()<WKNavigationDelegate>
+@interface WKWebViewExample ()<WKNavigationDelegate>
 
 @end
 
-@implementation ViewController
+@implementation WKWebViewExample
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,9 +24,7 @@
     [self.view addSubview:webView];
     
     //Make sure to provide your API key and Latitude / Longitude if possible or remove paramaters
-    NSMutableURLRequest *relevantSolutionsCoupon = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://web.groupinterest.com/define?&apiKey=&latitude=0&longitude=-0"]];
-    //Request load
-    [webView loadRequest:relevantSolutionsCoupon];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://web.groupinterest.com/define?&apiKey=&latitude=0&longitude=-0"]]];
 }
 
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{

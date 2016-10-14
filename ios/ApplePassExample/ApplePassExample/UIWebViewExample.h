@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  UIWebViewExample.h
 //  ApplePassExample
 //
-//  Created by justin imhoff on 10/13/16.
+//  Created by justin imhoff on 10/14/16.
 //  Copyright © 2016 Relevant Solutions. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface UIWebViewExample : UIViewController
 
 @end
-
